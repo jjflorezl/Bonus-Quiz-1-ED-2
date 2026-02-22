@@ -93,7 +93,7 @@ public class CentroAtencion {
         System.out.println("id no encontrado");
     }
     public void insertarTurnoUrgente(int id, char tipo, int tiempoEstimado,int pos){
-        if(pos>0&&pos<n) {
+        if(pos>=0&&pos<n) {
             registrarTurno(id, tipo, tiempoEstimado);
             desplazarPosicion(pos, ids);
             desplazarPosicion(pos, tiempos);
